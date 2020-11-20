@@ -4,13 +4,10 @@
 ----------------
 # 목차  
 
-ㅈ박은 
->ㅈ박박
-* 빨
-  - 주
-    * 노   
-    
-    ![gimo](/images/test.png)
-    
-[클릭하지마](https://github.com/isp829/HU/blob/master/lecture/lecture1.md "")
-    
+1. 플레이어 제작
+  1. 기본행동 만들기(움직이기,점프)  
+  2.
+
+2. 발판 만들기
+
+3. 적 만들기
