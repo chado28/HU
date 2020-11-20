@@ -10,5 +10,5 @@
   - 주
     * 노   
     
-    ![gimo](/test.png)
+    ![gimo](/images/test.png)
     
