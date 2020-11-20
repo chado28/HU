@@ -5,10 +5,10 @@
 # 목차  
 
 1. 우리가 뭘 만들것인가?
-   1. [유니티 교육에 좋은 점프&런게임](lecture/lecture1.md)
+   *. [유니티 교육에 좋은 점프&런게임](lecture/lecture1.md)
 
 1. 어떤 플랫폼을 대상으로 만들것인가?
-   1. [제일 간단하게 만들 수 있는 PC를 대상으로](lecture/lecture2.md)
+   *. [제일 간단하게 만들 수 있는 PC를 대상으로](lecture/lecture2.md)
    
 2. 플레이어 제작
    1. [기본행동 만들기(움직이기,점프)](lecture/lecture3-1.md)  
