@@ -2,4 +2,6 @@
 ========================================
 ![드레이크](https://github.com/isp829/HU/blob/master/images/lecture2/drake.jpg)
 
+![하지마그냥](https://github.com/isp829/HU/blob/master/images/lecture2/joy.PNG)
+
     
