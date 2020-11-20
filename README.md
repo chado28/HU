@@ -9,5 +9,5 @@
 * 빨
   - 주
     * 노
-    ![gimo](/test.jpg)
+    ![gimo](/test.png)
     
