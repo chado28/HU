@@ -10,5 +10,11 @@
 ![lecture3-1-3](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-3.PNG)  
 * 적당한 크기로 늘리고 적당한 위치에 배정한다.  
 + 물체들의 z축 값을 같게 조절한다.
- ---------------------------------
+ ---------------------------------  
+![lecture3-1-4](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-4.png)  
+* 구체 이름은 player, 정육면체 이름은 ground로 해주고,   
+ ---------------------------------  
+![lecture3-1-5](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-5.png)  
+* 각각 player와 ground tag를 추가해준다.
+ ---------------------------------  
     
