@@ -11,7 +11,7 @@
    * [제일 간단하게 만들 수 있는 PC를 대상으로](lecture/lecture2.md)
    
 1. Asset sotre에서 asset가져오기
-  * [맘에 드는 asset을 가져오자](lecture/lectureA.md)
+   * [맘에 드는 asset을 가져오자](lecture/lectureA.md)  
    
 2. 플레이어 제작
    1. [기본행동 만들기(움직이기,점프)](lecture/lecture3-1.md)  
