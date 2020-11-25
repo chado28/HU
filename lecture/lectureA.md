@@ -1,6 +1,7 @@
-왜 다른 플랫폼 말고 PC환경으로 만드는가
+원하는 Asset을 Asset Store에서 가져오자.
 ========================================
-![드레이크](https://github.com/isp829/HU/blob/master/images/lecture2/drake.jpg)
+![드레이크](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-1.PNG)  
+* 2D platform으로 UNITY 프로젝트를 하나 만들어준다.
 
 ![하지마그냥](https://github.com/isp829/HU/blob/master/images/lecture2/joy.PNG)
 
