@@ -79,12 +79,12 @@ public class test : MonoBehaviour
 ![lecture3-1-9](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-B/3-1-B-9.png)  
 * gameObject의 이름도 바꿔주고 잘보이게 색깔도 바꿔주고 위치는 0,0,0 즉 player발 바로 아래에 둔다.  
  ---------------------------------  
-![lecture3-1-10](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-B/3-1-10.PNG)
-![lecture3-1-11](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-B/3-1-11.PNG)
-![lecture3-1-12](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-B/3-1-12.PNG)  
+![lecture3-1-10](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-B/3-1-B-10.png)
+![lecture3-1-11](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-B/3-1-B-11.png)
+![lecture3-1-12](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-B/3-1-B-12.png)  
 * tileMap에 ground layer를 추가해준다.  
  ---------------------------------  
-![lecture3-1-13](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-B/3-1-13.PNG)  
+![lecture3-1-13](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-B/3-1-B-13.png)  
 * 다시 player로 가서 Ground Check에 아까 만든 gameObject를,  
 what is ground에 ground layer를 넣어주고, 적당한 ground Radius를 설정해준다.  
  ---------------------------------  
