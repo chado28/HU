@@ -13,104 +13,54 @@ using System.Collections.Generic;
 using Unity.Mathematics;
 using UnityEditor;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class player : MonoBehaviour
-
+public class PlayerMoveController : MonoBehaviour
 {
     public float moveSpeed = 5.0f; //플레이어 이동 속도
     public float jumpPower = 5.0f; //플레이어 점프 힘
-    public Animator animator;
-    public AudioSource audio;
-    public AudioClip jump;
 
-
-    Rigidbody2D rigid;
-
+    public Rigidbody2D rigid;
 
     float horizontal; //왼쪽, 오른쪽 방향값을 받는 변수
 
-    public bool isground;
-    public Transform groundCheck;
-    public float groundRadius = 0.2f;
-    public LayerMask whatIsGround;
-
-    void oncollisionstay() { 
-    }
+    bool isground;
 
     private void Start()
     {
-        isground = false;
         rigid = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
     }
 
     private void FixedUpdate()
     {
-        
-
+        Move(); //플레이어 이동
+        Jump(); //점프   
     }
 
-    private void OnCollisionEnter2D(Collision2D col)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-       if (col.gameObject.tag=="spike" )
+        if (collision.gameObject.CompareTag("ground"))
         {
-            SceneManager.LoadScene("Scene1");
+            isground = true;//ground에 접촉하면 isground를 true로
         }
     }
 
-    private void OnCollsionExit2D(Collision2D col) 
-    {
-        
-    }
-    void OnTriggerEnter2D(Collider2D col)
-    {
-        if (col.gameObject.tag == "spike")
-        {
-            SceneManager.LoadScene("Scene1");
-        }
-        if (col.gameObject.tag == "goal")
-        {
-            SceneManager.LoadScene("clear");
-        }
-    }
 
     void Jump()
     {
-        if (Input.GetButton("Jump")) //점프 키가 눌렸을 때
+        if (Input.GetButton("Jump")) //점프 키가 눌렸을 때//ground이면서 스페이스바 누르면 
         {
             if (isground == true) //점프 중이지 않을 때
             {
-                audio.PlayDelayed(0.1f);
-                audio.Play();
-                animator.SetBool("jump", true);
                 rigid.AddForce(Vector2.up * jumpPower, ForceMode2D.Impulse); //위쪽으로 힘을 준다.
-                isground = false;
-                
-                
+                isjumping = false;
             }
             else return; //점프 중일 때는 실행하지 않고 바로 return.
         }
-       
     }
 
 
 
-    void start() 
-    {
 
-    }
-
-    void Update() 
-    {
-        isground = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsGround);
-        if (isground == true)
-        {
-            animator.SetBool("jump", false);
-        }
-        Move(); //플레이어 이동
-        Jump(); //점프
-    }
 
 
     void Move()
@@ -121,21 +71,18 @@ public class player : MonoBehaviour
         {
             animator.SetBool("walk", true);
 
-            if (horizontal >= 0) 
-            { 
-                this.transform.eulerAngles = new Vector3(0, 0, 0); 
-            }
+            if (horizontal >= 0) this.transform.eulerAngles = new Vector3(0, 0, 0);
 
             else this.transform.eulerAngles = new Vector3(0, 180, 0);
-
+            
         }
         else
         {
             animator.SetBool("walk", false);
         }
 
-        Vector3 dir = math.abs(horizontal) * Vector3.right; //변수의 자료형을 맞추기 위해 생성한 새로운 Vector3 변수
-
+        Vector3 dir = math.abs(horizontal)* Vector3.right; //변수의 자료형을 맞추기 위해 생성한 새로운 Vector3 변수
+        
         this.transform.Translate(dir * moveSpeed * Time.deltaTime); //오브젝트 이동 함수
     }
 }
