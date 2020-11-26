@@ -4,6 +4,6 @@
 
 ![하지마그냥](https://github.com/isp829/HU/blob/master/images/lecture2/joy.PNG)
 
-* 조이스틱 코드 짤시간에 UI 개선합니다
+* PC환경에서 만드는게 제일 단순하고 편하다.  
 
     
