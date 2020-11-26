@@ -10,11 +10,10 @@
 ```
 using System.Collections;
 using System.Collections.Generic;
-using Unity.Mathematics;
-using UnityEditor;
 using UnityEngine;
+using Unity.Mathematics;
 
-public class PlayerMoveController : MonoBehaviour
+public class test : MonoBehaviour
 {
     public float moveSpeed = 5.0f; //플레이어 이동 속도
     public float jumpPower = 5.0f; //플레이어 점프 힘
@@ -23,7 +22,7 @@ public class PlayerMoveController : MonoBehaviour
 
     float horizontal; //왼쪽, 오른쪽 방향값을 받는 변수
 
-    bool isground;
+    public bool isground;
 
     private void Start()
     {
@@ -52,7 +51,7 @@ public class PlayerMoveController : MonoBehaviour
             if (isground == true) //점프 중이지 않을 때
             {
                 rigid.AddForce(Vector2.up * jumpPower, ForceMode2D.Impulse); //위쪽으로 힘을 준다.
-                isjumping = false;
+                isground = false;
             }
             else return; //점프 중일 때는 실행하지 않고 바로 return.
         }
@@ -69,20 +68,18 @@ public class PlayerMoveController : MonoBehaviour
 
         if (horizontal != 0)
         {
-            animator.SetBool("walk", true);
-
+            
             if (horizontal >= 0) this.transform.eulerAngles = new Vector3(0, 0, 0);
 
             else this.transform.eulerAngles = new Vector3(0, 180, 0);
-            
-        }
-        else
-        {
-            animator.SetBool("walk", false);
-        }
 
-        Vector3 dir = math.abs(horizontal)* Vector3.right; //변수의 자료형을 맞추기 위해 생성한 새로운 Vector3 변수
+        }
         
+           
+        
+
+        Vector3 dir = math.abs(horizontal) * Vector3.right; //변수의 자료형을 맞추기 위해 생성한 새로운 Vector3 변수
+
         this.transform.Translate(dir * moveSpeed * Time.deltaTime); //오브젝트 이동 함수
     }
 }
