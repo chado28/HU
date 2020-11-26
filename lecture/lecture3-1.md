@@ -96,4 +96,16 @@ public class PlayerMoveController : MonoBehaviour
 ![lecture3-1-5](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-5.png)  
 * 캡슐 콜라이더를 넣고 크기를 조절해준다.  
  ---------------------------------  
+![lecture3-1-6](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-6.png)
+![lecture3-1-7](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-7.png)  
+* 아까 추가한 타일맵에 ground 태그를 추가해준다.    
+ ---------------------------------  
+    
+![lecture3-1-8](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-8.png)  
+* 타일맵에도 rigidbody2d를 추가해주고 xy위치 고정, z축 고정을 해준다.   
+ ---------------------------------  
+ ![lecture3-1-9](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-9.png)  
+* tilemap collider 2D도 추가해준다.     
+ ---------------------------------  
+    
     
