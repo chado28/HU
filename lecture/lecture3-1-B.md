@@ -72,17 +72,21 @@ public class test : MonoBehaviour
 ```
 * 수정한 코드 전문이다. 그냥 복사붙여넣기하지 말고 무슨뜻인지는 읽으면서 작성하자.  
 ----------------------------------  
-* 좌우 방향키로 움직이고, 점프키(스페이스바)를 누르면 점프해주는 기본적인 코드를 짜준다.
+ ![lecture3-1-B-7](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-B/3-1-B-7.PNG)
+ ![lecture3-1-B-8](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-B/3-1-B-8.PNG)    
+* Hierarchy에서 create Empty로 gameObject를 하나 만들어서 player에게 넣어준다..
  ---------------------------------  
-![lecture3-1-4](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-4.png)  
-* 플레이어에게 rigidbody2D를 넣어주고 z축 회전을 막은다음  
+![lecture3-1-9](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-B/3-1-9.png)  
+* gameObject의 이름도 바꿔주고 잘보이게 색깔도 바꿔주고 위치는 0,0,0 즉 player발 바로 아래에 둔다.  
  ---------------------------------  
-![lecture3-1-5](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-5.png)  
-* 캡슐 콜라이더를 넣고 크기를 조절해준다.  
+![lecture3-1-10](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-B/3-1-10.png)
+![lecture3-1-11](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-B/3-1-11.png)
+![lecture3-1-12](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-B/3-1-12.png)  
+* tileMap에 ground layer를 추가해준다.  
  ---------------------------------  
-![lecture3-1-6](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-6.png)
-![lecture3-1-7](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-7.PNG)  
-* 아까 추가한 타일맵에 ground 태그를 추가해준다.    
+![lecture3-1-13](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-B/3-1-13.png)  
+* 다시 player로 가서 Ground Check에 아까 만든 gameObject를,  
+what is ground에 ground layer를 넣어주고, 적당한 ground Radius를 설정해준다.  
  ---------------------------------  
     
 ![lecture3-1-8](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-8.png)  
