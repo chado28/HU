@@ -92,3 +92,7 @@ what is ground에 ground layer를 넣어주고, 적당한 ground Radius를 설�
 ![lecture3-1-B-14](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-B/3-1-B-14.png)  
 * 실행해보면 아까있었던 벽점프는 사라진걸 알 수 있다.  
  ---------------------------------  
+[목차로](https://github.com/isp829/HU/blob/master/README.md)  
+[다음](https://github.com/isp829/HU/blob/master/lecture/lecture3-2.md)   
+-----------------------------
+    
