@@ -90,11 +90,10 @@ public class PlayerMoveController : MonoBehaviour
 
 * 좌우 방향키로 움직이고, 점프키(스페이스바)를 누르면 점프해주는 기본적인 코드를 짜준다.
  ---------------------------------  
-![lecture3-1-5](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-5.png)  
-* 각각 player와 ground tag를 추가해준다.
+![lecture3-1-4](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-4.png)  
+* 플레이어에게 rigidbody2D를 넣어주고 z축 회전을 막은다음  
  ---------------------------------  
-![lecture3-1-6](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-6.png)  
-* 우리 눈에는 2D로 보이지만 사실 3D이므로 2d rigidbody말고 그냥 rigidbody를 추가해준후,  
-ground의 x y z 좌표를 고정시켜준다.
+![lecture3-1-5](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-5.png)  
+* 캡슐 콜라이더를 넣고 크기를 조절해준다.  
  ---------------------------------  
     
