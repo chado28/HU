@@ -17,7 +17,13 @@
 ------------------  
 ![A-5](https://github.com/isp829/HU/blob/master/images/lectureA/A-5.png)   
 * 원하는 목록들을 체크해주고 import해준다.  
--------------------------------------------------------------    
+-------------------------------------------------------------   
+
+[목차로](https://github.com/isp829/HU/blob/master/README.md)  
+[다음](https://github.com/isp829/HU/blob/master/lecture/lecture3.md)  
+-----------------------------
+    
+
 
 
 
