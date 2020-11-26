@@ -94,7 +94,7 @@ public class test : MonoBehaviour
 * 캡슐 콜라이더를 넣고 크기를 조절해준다.  
  ---------------------------------  
 ![lecture3-1-6](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-6.png)
-![lecture3-1-7](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-7.png)  
+![lecture3-1-7](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-7.PNG)  
 * 아까 추가한 타일맵에 ground 태그를 추가해준다.    
  ---------------------------------  
     
@@ -104,5 +104,8 @@ public class test : MonoBehaviour
  ![lecture3-1-9](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-9.PNG)  
 * tilemap collider 2D도 추가해준다.     
  ---------------------------------  
-    
+ ![lecture3-1-10](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-10.PNG)  
+* 실행해서 작동하나 확인해보자.    
+ ---------------------------------  
+        
     
