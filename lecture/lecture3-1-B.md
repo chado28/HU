@@ -18,45 +18,32 @@
  ---------------------------------  
  ![lecture3-1-B-6](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-B/3-1-B-6.PNG)  
 * colliderEnter2D에 있는 isground조건들을 없애주고 Update에 새로운 isground조건을 적어준다.  
-  
  ---------------------------------  
 ```
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Unity.Mathematics;
-
 public class test : MonoBehaviour
 {
     public float moveSpeed = 5.0f; //플레이어 이동 속도
     public float jumpPower = 5.0f; //플레이어 점프 힘
-
     public Rigidbody2D rigid;
-
     float horizontal; //왼쪽, 오른쪽 방향값을 받는 변수
-
-    public bool isground;
-
+    public bool isground;//값을 받을 bool값
+    public Transform groundCheck;//player발위치
+    public float groundRadius = 0.2f;//측정할 범위
+    public LayerMask whatIsGround;//어떤 layer를 측정할지
     private void Start()
     {
         rigid = GetComponent<Rigidbody2D>();
     }
-
     private void FixedUpdate()
     {
+        isground = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsGround);
         Move(); //플레이어 이동
         Jump(); //점프   
     }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("ground"))
-        {
-            isground = true;//ground에 접촉하면 isground를 true로
-        }
-    }
-
-
     void Jump()
     {
         if (Input.GetButton("Jump")) //점프 키가 눌렸을 때//ground이면서 스페이스바 누르면 
@@ -69,35 +56,22 @@ public class test : MonoBehaviour
             else return; //점프 중일 때는 실행하지 않고 바로 return.
         }
     }
-
-
-
-
-
-
     void Move()
     {
         horizontal = Input.GetAxis("Horizontal");
-
         if (horizontal != 0)
         {
-            
             if (horizontal >= 0) this.transform.eulerAngles = new Vector3(0, 0, 0);
-
             else this.transform.eulerAngles = new Vector3(0, 180, 0);
-
         }
-        
-           
-        
-
         Vector3 dir = math.abs(horizontal) * Vector3.right; //변수의 자료형을 맞추기 위해 생성한 새로운 Vector3 변수
-
         this.transform.Translate(dir * moveSpeed * Time.deltaTime); //오브젝트 이동 함수
     }
 }
-```
 
+```
+* 수정한 코드 전문이다. 그냥 복사붙여넣기하지 말고 무슨뜻인지는 읽으면서 작성하자.  
+----------------------------------  
 * 좌우 방향키로 움직이고, 점프키(스페이스바)를 누르면 점프해주는 기본적인 코드를 짜준다.
  ---------------------------------  
 ![lecture3-1-4](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-4.png)  
