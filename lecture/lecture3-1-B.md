@@ -14,14 +14,11 @@
 특정 범위내에 특정 layer가 있는지 알려주는 기능이다.    
  ---------------------------------  
  ![lecture3-1-B-5](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-B/3-1-B-5.PNG)  
-* 방법중의 하나인 Physics2D.OverlapCircle기능을 소개하겠다.  
-* 단순하게 설명하면 player의 발부분에 gameObject를 설정하고,  
-특정 범위내에 특정 layer가 있는지 알려주는 기능이다.    
+* 코드에 새로운 변수들을 선언해 준다.  
  ---------------------------------  
  ![lecture3-1-B-6](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-B/3-1-B-6.PNG)  
-* 방법중의 하나인 Physics2D.OverlapCircle기능을 소개하겠다.  
-* 단순하게 설명하면 player의 발부분에 gameObject를 설정하고,  
-특정 범위내에 특정 layer가 있는지 알려주는 기능이다.    
+* colliderEnter2D에 있는 isground조건들을 없애주고 Update에 새로운 isground조건을 적어준다.  
+  
  ---------------------------------  
 ```
 using System.Collections;
