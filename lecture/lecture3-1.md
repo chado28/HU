@@ -104,7 +104,7 @@ public class PlayerMoveController : MonoBehaviour
 ![lecture3-1-8](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-8.png)  
 * 타일맵에도 rigidbody2d를 추가해주고 xy위치 고정, z축 고정을 해준다.   
  ---------------------------------  
- ![lecture3-1-9]https://github.com/isp829/HU/blob/master/images/lecture3/3-1-9.PNG)  
+ ![lecture3-1-9](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-9.PNG)  
 * tilemap collider 2D도 추가해준다.     
  ---------------------------------  
     
