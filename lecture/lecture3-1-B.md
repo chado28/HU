@@ -4,7 +4,7 @@
 * 저렇게 코드를 짜면 큰 문제가 발생하는데 player와 ground tag가 접촉하면 무조건 isground가 되어서 점프가 가능해진다.  
 즉 원하지 않는 벽점프등등의 잡기술이 생긴다.  
 --------------------------
-![lecture3-1-B-2](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-B/3-1-B-2.jpg)  
+![lecture3-1-B-2](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-B/3-1-B-3.jpg)  
 * 어떻게 해야 저 문제를 해결할 수 있을까?  
 발표해보자.  
  ---------------------------------  
