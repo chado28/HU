@@ -106,6 +106,10 @@ public class test : MonoBehaviour
  ---------------------------------  
  ![lecture3-1-10](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-10.PNG)  
 * 실행해서 작동하나 확인해보자.    
- ---------------------------------  
-        
+ ---------------------------------   
+[목차로](https://github.com/isp829/HU/blob/master/README.md)  
+[다음](https://github.com/isp829/HU/blob/master/lecture/lecture3-1-B.md)  
+-----------------------------
+    
+
     
