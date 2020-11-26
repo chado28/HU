@@ -10,11 +10,10 @@
 ```
 using System.Collections;
 using System.Collections.Generic;
-using Unity.Mathematics;
-using UnityEditor;
 using UnityEngine;
+using Unity.Mathematics;
 
-public class PlayerMoveController : MonoBehaviour
+public class test : MonoBehaviour
 {
     public float moveSpeed = 5.0f; //플레이어 이동 속도
     public float jumpPower = 5.0f; //플레이어 점프 힘
@@ -23,7 +22,7 @@ public class PlayerMoveController : MonoBehaviour
 
     float horizontal; //왼쪽, 오른쪽 방향값을 받는 변수
 
-    bool isground;
+    public bool isground;
 
     private void Start()
     {
@@ -52,7 +51,7 @@ public class PlayerMoveController : MonoBehaviour
             if (isground == true) //점프 중이지 않을 때
             {
                 rigid.AddForce(Vector2.up * jumpPower, ForceMode2D.Impulse); //위쪽으로 힘을 준다.
-                isjumping = false;
+                isground = false;
             }
             else return; //점프 중일 때는 실행하지 않고 바로 return.
         }
@@ -69,20 +68,18 @@ public class PlayerMoveController : MonoBehaviour
 
         if (horizontal != 0)
         {
-            animator.SetBool("walk", true);
-
+            
             if (horizontal >= 0) this.transform.eulerAngles = new Vector3(0, 0, 0);
 
             else this.transform.eulerAngles = new Vector3(0, 180, 0);
-            
-        }
-        else
-        {
-            animator.SetBool("walk", false);
-        }
 
-        Vector3 dir = math.abs(horizontal)* Vector3.right; //변수의 자료형을 맞추기 위해 생성한 새로운 Vector3 변수
+        }
         
+           
+        
+
+        Vector3 dir = math.abs(horizontal) * Vector3.right; //변수의 자료형을 맞추기 위해 생성한 새로운 Vector3 변수
+
         this.transform.Translate(dir * moveSpeed * Time.deltaTime); //오브젝트 이동 함수
     }
 }
@@ -97,15 +94,18 @@ public class PlayerMoveController : MonoBehaviour
 * 캡슐 콜라이더를 넣고 크기를 조절해준다.  
  ---------------------------------  
 ![lecture3-1-6](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-6.png)
-![lecture3-1-7](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-7.png)  
+![lecture3-1-7](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-7.PNG)  
 * 아까 추가한 타일맵에 ground 태그를 추가해준다.    
  ---------------------------------  
     
 ![lecture3-1-8](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-8.png)  
 * 타일맵에도 rigidbody2d를 추가해주고 xy위치 고정, z축 고정을 해준다.   
  ---------------------------------  
- ![lecture3-1-9](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-9.png)  
+ ![lecture3-1-9](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-9.PNG)  
 * tilemap collider 2D도 추가해준다.     
  ---------------------------------  
-    
+ ![lecture3-1-10](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-10.PNG)  
+* 실행해서 작동하나 확인해보자.    
+ ---------------------------------  
+        
     
