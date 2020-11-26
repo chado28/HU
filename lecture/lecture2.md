@@ -7,7 +7,7 @@
 * PC환경에서 만드는게 제일 단순하고 편하다.  
 ------------------------------ 
 [목차로](https://github.com/isp829/HU/blob/master/README.md)  
-[다음](https://github.com/isp829/HU/blob/master/lecture/lecture.md)  
+[다음](https://github.com/isp829/HU/blob/master/lecture/lectureA.md)  
 -----------------------------
     
 
