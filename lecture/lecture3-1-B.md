@@ -4,9 +4,9 @@
 * 저렇게 코드를 짜면 큰 문제가 발생하는데 player와 ground tag가 접촉하면 무조건 isground가 되어서 점프가 가능해진다.  
 즉 원하지 않는 벽점프등등의 잡기술이 생긴다.  
 --------------------------
-![lecture3-1-3](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-3.PNG)  
-* 드래그한 이미지의 xyz값은 모두 0으로 해준다.  
-+ main camera의 z값만 -1로 해주면 Game tab에 이미지가 보일것이다.
+![lecture3-1-B-2](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-B/3-1-B-2.jpg)  
+* 어떻게 해야 저 문제를 해결할 수 있을까?  
+발표해보자.  
  ---------------------------------  
 ```
 using System.Collections;
