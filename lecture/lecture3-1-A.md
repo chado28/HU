@@ -105,4 +105,10 @@ public class test : MonoBehaviour
 ![lecture3-1-A-14](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-A/3-1-A-14.png)   
 * 코드를 추가해줬으니까 animator에 아까 추가한 animator를 추가해주고, animation controller에 아까 만들어준 controller를 넣어준다.  
 --------------------------  
-
+![lecture3-1-A-15](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-A/3-1-A-15.PNG)   
+* 실행해 보면 상황따라 애니메이션들이 잘 적용되는걸 알 수 있다.    
+--------------------------  
+[목차로](https://github.com/isp829/HU/blob/master/README.md)  
+[다음](https://github.com/isp829/HU/blob/master/lecture/lecture3-2.md)  
+-----------------------------
+    
