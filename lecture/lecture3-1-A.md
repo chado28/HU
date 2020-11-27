@@ -1,6 +1,6 @@
 플레이어 애니메이션 만들기  
 =======================
-![lecture3-1-2](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-2.png)
+![lecture3-1-A-1](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-A/3-1-A-1.png)
 * 다운 받은 패키지에서 플레이어로 쓸 asset을 드래그 드롭해서 올려놓는다.  
 --------------------------
 ![lecture3-1-3](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-3.PNG)  
