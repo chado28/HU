@@ -6,10 +6,10 @@
 ![lecture3-1-A-2](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-A/3-1-A-2.png)
 * 다운 받은 패키지에서 플레이어로 쓸 asset을 드래그 드롭해서 올려놓는다.  
 --------------------------  
-![lecture3-1-A-3](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-A/3-1-A-3.png)
+![lecture3-1-A-3](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-A/3-1-A-3.PNG)
 * 다운 받은 패키지에서 플레이어로 쓸 asset을 드래그 드롭해서 올려놓는다.  
 --------------------------  
-![lecture3-1-A-4](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-A/3-1-A-4.png)
+![lecture3-1-A-4](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-A/3-1-A-4.PNG)
 * 다운 받은 패키지에서 플레이어로 쓸 asset을 드래그 드롭해서 올려놓는다.  
 --------------------------  
 ![lecture3-1-A-5](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-A/3-1-A-5.png)
@@ -27,10 +27,10 @@
 ![lecture3-1-A-9](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-A/3-1-A-9.png)
 * 다운 받은 패키지에서 플레이어로 쓸 asset을 드래그 드롭해서 올려놓는다.  
 --------------------------  
-![lecture3-1-A-10](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-A/3-1-A-10.png)
+![lecture3-1-A-10](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-A/3-1-A-10.PNG)
 * 다운 받은 패키지에서 플레이어로 쓸 asset을 드래그 드롭해서 올려놓는다.  
 --------------------------  
-![lecture3-1-A-11](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-A/3-1-A-11.png)
+![lecture3-1-A-11](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-A/3-1-A-11.PNG)
 * 다운 받은 패키지에서 플레이어로 쓸 asset을 드래그 드롭해서 올려놓는다.  
 --------------------------  
 
