@@ -18,7 +18,8 @@
    
 2. 플레이어 제작
    1. [기본행동 만들기(움직이기,점프)](lecture/lecture3-1.md)  
-   1. [기본행동 개선하기.](lecture/lecture3-1-B.md)  
+   1. [기본행동 개선하기.](lecture/lecture3-1-B.md) 
+   1. [기본행동 애니메이션 만들기](lecture/lecture3-1-A.md)  
    2. [카메라 설정](lecture/lecture3-2.md)
    3. [다른 물체들과 상호작용](lecture/lecture3-3.md)
 
