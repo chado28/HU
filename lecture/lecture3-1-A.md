@@ -102,7 +102,7 @@ public class test : MonoBehaviour
 ```
 * 바뀐 코드의 전문이다. 이번에도 그냥 배끼지 말고 왜 여기에 썼는지 생각하면서 해보자.  
 -----------------------------  
-![lecture3-1-A-14](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-A/3-1-A-14.)
+![lecture3-1-A-14](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-A/3-1-A-14.png)   
 * 코드를 추가해줬으니까 animator에 아까 추가한 animator를 추가해주고, animation controller에 아까 만들어준 controller를 넣어준다.  
 --------------------------  
 
