@@ -34,8 +34,9 @@
 ![lecture3-1-A-10](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-A/3-1-A-10.PNG)
 * 각각의 전환이 이루어지려면 어떤 상황일지 생각해보면서 "walk"와 "jump"의 상태를 적어둔다.  
 --------------------------  
-![lecture3-1-A-11](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-A/3-1-A-11.PNG)
-* 다운 받은 패키지에서 플레이어로 쓸 asset을 드래그 드롭해서 올려놓는다.  
+![lecture3-1-A-13](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-A/3-1-A-13.PNG)  
+![lecture3-1-A-11](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-A/3-1-A-11.PNG)  
+* 코드를 수정해주자 animator를 추가해주고, animator의 bool값을 바꿔줄 명령어들을 어디다 써야할지 생각해보자.    
 --------------------------  
 
 ```
@@ -99,4 +100,9 @@ public class test : MonoBehaviour
     }
 }
 ```
+* 바뀐 코드의 전문이다. 이번에도 그냥 배끼지 말고 왜 여기에 썼는지 생각하면서 해보자.  
+-----------------------------  
+![lecture3-1-A-14](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-A/3-1-A-14.PNG)
+* 코드를 추가해줬으니까 animator에 아까 추가한 animator를 추가해주고, animation controller에 아까 만들어준 controller를 넣어준다.  
+--------------------------  
 
