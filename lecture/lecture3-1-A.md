@@ -25,11 +25,14 @@
 ![lecture3-1-A-8](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-A/3-1-A-8.png)
 * animator에서 상태조절을 위한 bool parameter "walk"와 "jump"를 만들어준다.  
 --------------------------  
+![lecture3-1-A-12](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-A/3-1-A-12.png)
+* 각각의 state에 마우스 오른쪽 클릭을 해서 Make Transition으로 쌍방으로 만들어주자.  
+--------------------------------------    
 ![lecture3-1-A-9](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-A/3-1-A-9.png)
-* 다운 받은 패키지에서 플레이어로 쓸 asset을 드래그 드롭해서 올려놓는다.  
+* 방향표들을 확인해보면 건너가는 시간들이 있는데 다 0초로 수정해주자.  
 --------------------------  
 ![lecture3-1-A-10](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-A/3-1-A-10.PNG)
-* 다운 받은 패키지에서 플레이어로 쓸 asset을 드래그 드롭해서 올려놓는다.  
+* 각각의 전환이 이루어지려면 어떤 상황일지 생각해보면서 "walk"와 "jump"의 상태를 적어둔다.  
 --------------------------  
 ![lecture3-1-A-11](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-A/3-1-A-11.PNG)
 * 다운 받은 패키지에서 플레이어로 쓸 asset을 드래그 드롭해서 올려놓는다.  
