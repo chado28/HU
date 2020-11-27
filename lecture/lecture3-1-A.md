@@ -1,28 +1,29 @@
 플레이어 애니메이션 만들기  
 =======================
 ![lecture3-1-A-1](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-A/3-1-A-1.png)
-* 다운 받은 패키지에서 플레이어로 쓸 asset을 드래그 드롭해서 올려놓는다.  
+* player에 animator asset을 추가해준다.  
 --------------------------  
 ![lecture3-1-A-2](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-A/3-1-A-2.png)
-* 다운 받은 패키지에서 플레이어로 쓸 asset을 드래그 드롭해서 올려놓는다.  
+* Project tab에서 Animator Controller도 하나 만들어준다.  
 --------------------------  
 ![lecture3-1-A-3](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-A/3-1-A-3.PNG)
-* 다운 받은 패키지에서 플레이어로 쓸 asset을 드래그 드롭해서 올려놓는다.  
---------------------------  
 ![lecture3-1-A-4](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-A/3-1-A-4.PNG)
-* 다운 받은 패키지에서 플레이어로 쓸 asset을 드래그 드롭해서 올려놓는다.  
---------------------------  
+* 애니메이션에 쓸 모션들을 드래그해서 Scene이나 Hierarchy에 올려놓는다.   
+* 올려놓으면 Project에 새로운 애니메이션들과 애니메이션 컨트롤러 들이 생긴다.  
+--------------------------   
 ![lecture3-1-A-5](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-A/3-1-A-5.png)
-* 다운 받은 패키지에서 플레이어로 쓸 asset을 드래그 드롭해서 올려놓는다.  
+* Animator tab을 열어준다.   
 --------------------------  
 ![lecture3-1-A-6](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-A/3-1-A-6.png)
-* 다운 받은 패키지에서 플레이어로 쓸 asset을 드래그 드롭해서 올려놓는다.  
+* 가만히 있을때 모션을 위해서 빈 상태를 하나 만들고  
+아까 만든 걷는 애니메이션과 점프 애니메이션을 넣어준다.  
 --------------------------  
 ![lecture3-1-A-7](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-A/3-1-A-7.png)
-* 다운 받은 패키지에서 플레이어로 쓸 asset을 드래그 드롭해서 올려놓는다.  
+* player가 할 수 있는 행동이 3가지 밖에 없다면 그림과 같이 될것이다.  
+각각 어떤 조건을 가져야 저렇게 움직일지 생각해보자.  
 --------------------------  
 ![lecture3-1-A-8](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-A/3-1-A-8.png)
-* 다운 받은 패키지에서 플레이어로 쓸 asset을 드래그 드롭해서 올려놓는다.  
+* animator에서 상태조절을 위한 bool parameter "walk"와 "jump"를 만들어준다.  
 --------------------------  
 ![lecture3-1-A-9](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-A/3-1-A-9.png)
 * 다운 받은 패키지에서 플레이어로 쓸 asset을 드래그 드롭해서 올려놓는다.  
