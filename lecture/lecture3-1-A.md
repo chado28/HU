@@ -1,4 +1,4 @@
-플레이어 기본행동 만들기(움직이기 점프)  
+플레이어 애니메이션  
 =======================
 ![lecture3-1-2](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-2.png)
 * 다운 받은 패키지에서 플레이어로 쓸 asset을 드래그 드롭해서 올려놓는다.  
