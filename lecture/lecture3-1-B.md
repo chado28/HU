@@ -76,27 +76,23 @@ public class test : MonoBehaviour
  ![lecture3-1-B-8](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-B/3-1-B-8.PNG)    
 * Hierarchy에서 create Empty로 gameObject를 하나 만들어서 player에게 넣어준다..
  ---------------------------------  
-![lecture3-1-9](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-B/3-1-B-9.png)  
+![lecture3-1-B-9](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-B/3-1-B-9.png)  
 * gameObject의 이름도 바꿔주고 잘보이게 색깔도 바꿔주고 위치는 0,0,0 즉 player발 바로 아래에 둔다.  
  ---------------------------------  
-![lecture3-1-10](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-B/3-1-B-10.png)
-![lecture3-1-11](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-B/3-1-B-11.png)
-![lecture3-1-12](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-B/3-1-B-12.png)  
+![lecture3-1-B-10](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-B/3-1-B-10.png)
+![lecture3-1-B-11](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-B/3-1-B-11.png)
+![lecture3-1-B-12](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-B/3-1-B-12.png)  
 * tileMap에 ground layer를 추가해준다.  
  ---------------------------------  
-![lecture3-1-13](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-B/3-1-B-13.png)  
+![lecture3-1-B-13](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-B/3-1-B-13.png)  
 * 다시 player로 가서 Ground Check에 아까 만든 gameObject를,  
 what is ground에 ground layer를 넣어주고, 적당한 ground Radius를 설정해준다.  
  ---------------------------------  
     
-![lecture3-1-8](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-8.png)  
-* 타일맵에도 rigidbody2d를 추가해주고 xy위치 고정, z축 고정을 해준다.   
+![lecture3-1-B-14](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-B/3-1-B-14.PNG)  
+* 실행해보면 아까있었던 벽점프는 사라진걸 알 수 있다.  
  ---------------------------------  
- ![lecture3-1-9](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-B/3-1-B-9.png)  
-* tilemap collider 2D도 추가해준다.     
- ---------------------------------  
- ![lecture3-1-10](https://github.com/isp829/HU/blob/master/images/lecture3/3-1-10.PNG)  
-* 실행해서 작동하나 확인해보자.    
- ---------------------------------  
-        
+[목차로](https://github.com/isp829/HU/blob/master/README.md)  
+[다음](https://github.com/isp829/HU/blob/master/lecture/lecture3-2.md)   
+-----------------------------
     
