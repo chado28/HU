@@ -95,3 +95,4 @@ public class camera : MonoBehaviour
 ![lecture3-2-17](https://github.com/isp829/HU/blob/master/images/lecture3/3-2/3-2-17.PNG)      
 * 실행해보면 캐릭터가 움직여 맵이 변해도 배경은 변하지 않아 원근감이 느껴진다.   
 -------------------------------    
+https://github.com/isp829/HU/blob/master/lecture/lecture3-3.md
