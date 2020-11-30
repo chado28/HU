@@ -77,11 +77,11 @@ public class camera : MonoBehaviour
 ![lecture3-2-12](https://github.com/isp829/HU/blob/master/images/lecture3/3-2/3-2-12.PNG)      
 * 실행해보면 아까와는 다르게 위치감이 느껴진다.  
 -------------------------------    
-![lecture3-2-13](https://github.com/isp829/HU/blob/master/images/lecture3/3-2/3-2-13.PNG)      
+![lecture3-2-13](https://github.com/isp829/HU/blob/master/images/lecture3/3-2/3-2-13.png)      
 * 카메라에 사용한 코드 그대로 배경에도 쓸 수 있다.  
 배경으로 쓸 이미지를 드래그&드롭 해주자.  
 -------------------------------    
-![lecture3-2-14](https://github.com/isp829/HU/blob/master/images/lecture3/3-2/3-2-14.PNG)      
+![lecture3-2-14](https://github.com/isp829/HU/blob/master/images/lecture3/3-2/3-2-14.png)      
 * 배경이 타일맵을 가려버렸다. 어떻게 해야될까?   
 * 다시 add layer로 가자.  
 -------------------------------    
