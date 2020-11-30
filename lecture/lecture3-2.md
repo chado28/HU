@@ -14,4 +14,20 @@
 ![lecture3-2-5](https://github.com/isp829/HU/blob/master/images/lecture3/3-2/3-2-5.jpg)      
 * 그럼 어떻게 해야 카메라가 캐릭터를 계속 비추게 할 수 있을까?  
 -------------------------------  
-    
+``` 
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class camera : MonoBehaviour
+{
+    public Transform player;//따라다닐 player지정  
+    void Update()
+    {
+        gameObject.transform.position = new Vector3(player.position.x, player.position.y, this.transform.position.z);//카메라가 player를 따라다니게 한다.  
+    }
+}
+
+```  
+* 간단하게 카메라가 player gameObject를 따라다니게 하면 멀쩡한 카메라가 된다. 
+-------------------------------------------------------  
