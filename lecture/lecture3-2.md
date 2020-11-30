@@ -45,7 +45,7 @@ public class camera : MonoBehaviour
 * 근데 player가 어디에 있던 카메라가 날 정 가운데 비추어서 내가 어디쯤에 있는지 감이 너무 안잡힌다.  
 이러면 어떻게 해야될까?  
 -------------------------------  
-![lecture3-2-10](https://github.com/isp829/HU/blob/master/images/lecture3/3-2/3-2-10.png)      
+![lecture3-2-10](https://github.com/isp829/HU/blob/master/images/lecture3/3-2/3-2-10.PNG)      
 * 유니티의 mathf.clamp 기능을 써주면 최대값과 최솟값을 정해줄 수 있다.   
 -------------------------------  
 ```  
