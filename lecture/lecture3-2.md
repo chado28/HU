@@ -77,3 +77,21 @@ public class camera : MonoBehaviour
 ![lecture3-2-12](https://github.com/isp829/HU/blob/master/images/lecture3/3-2/3-2-12.PNG)      
 * 실행해보면 아까와는 다르게 위치감이 느껴진다.  
 -------------------------------    
+![lecture3-2-13](https://github.com/isp829/HU/blob/master/images/lecture3/3-2/3-2-13.PNG)      
+* 카메라에 사용한 코드 그대로 배경에도 쓸 수 있다.  
+배경으로 쓸 이미지를 드래그&드롭 해주자.  
+-------------------------------    
+![lecture3-2-14](https://github.com/isp829/HU/blob/master/images/lecture3/3-2/3-2-14.PNG)      
+* 배경이 타일맵을 가려버렸다. 어떻게 해야될까?   
+* 다시 add layer로 가자.  
+-------------------------------    
+![lecture3-2-15](https://github.com/isp829/HU/blob/master/images/lecture3/3-2/3-2-15.PNG)      
+* sorting layers에서 background를 추가해주자.  
+(제일먼저 앞에 보이고 싶은 layer일수록 아래에 위치한다.)  
+-------------------------------    
+![lecture3-2-16](https://github.com/isp829/HU/blob/master/images/lecture3/3-2/3-2-16.PNG)      
+* 배경의 크기와 sorting layer, 그리고 아까짠 코드의 설정을 해준다.  
+-------------------------------    
+![lecture3-2-17](https://github.com/isp829/HU/blob/master/images/lecture3/3-2/3-2-17.PNG)      
+* 실행해보면 캐릭터가 움직여 맵이 변해도 배경은 변하지 않아 원근감이 느껴진다.   
+-------------------------------    
