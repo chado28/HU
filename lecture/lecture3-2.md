@@ -1,4 +1,4 @@
-카메라 설정
+카메라/ 설정
 =======================
 ![lecture3-2-1](https://github.com/isp829/HU/blob/master/images/lecture3/3-2/3-2-1.PNG)
 * 맵을 만들다 보니까 문제가 생겼다.  
