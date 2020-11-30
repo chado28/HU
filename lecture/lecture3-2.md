@@ -25,6 +25,7 @@ public class camera : MonoBehaviour
     void Update()
     {
         gameObject.transform.position = new Vector3(player.position.x, player.position.y, this.transform.position.z);//카메라가 player를 따라다니게 한다.  
+        //카메라의 z위치는 비추려는 대상보다 뒤에있어야 하니까 자체적으로 z값을 준다.
     }
 }
 
@@ -44,9 +45,32 @@ public class camera : MonoBehaviour
 * 근데 player가 어디에 있던 카메라가 날 정 가운데 비추어서 내가 어디쯤에 있는지 감이 너무 안잡힌다.  
 이러면 어떻게 해야될까?  
 -------------------------------  
-![lecture3-2-5](https://github.com/isp829/HU/blob/master/images/lecture3/3-2/3-2-5.jpg)      
-* 그럼 어떻게 해야 카메라가 캐릭터를 계속 비추게 할 수 있을까?  
+![lecture3-2-10](https://github.com/isp829/HU/blob/master/images/lecture3/3-2/3-2-10.PNG)      
+* 유니티의 mathf.clamp 기능을 써주면 최대값과 최솟값을 정해줄 수 있다.   
 -------------------------------  
+```  
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+public class camera : MonoBehaviour
+{
+    public Transform player;
+    public float xMin;
+    public float yMin;
+    public float xMax;
+    public float yMax;
+    void Update()
+    {
+        float x = Mathf.Clamp(player.position.x, xMin, xMax);//어떤 값의 최대값과 최솟값을 정해주는 함수.
+        float y = Mathf.Clamp(player.position.y, yMin, yMax);
+        gameObject.transform.position = new Vector3(x, y,this.transform.position.z);
+        //카메라의 z위치는 비추려는 대상보다 뒤에있어야 하니까 자체적으로 z값을 준다.
+    }
+
+}
+```  
+* mathf.clamp를 사용하여 코드를 짜주자.  
+---------------------------------------------------------
 ![lecture3-2-5](https://github.com/isp829/HU/blob/master/images/lecture3/3-2/3-2-5.jpg)      
 * 그럼 어떻게 해야 카메라가 캐릭터를 계속 비추게 할 수 있을까?  
 -------------------------------  
