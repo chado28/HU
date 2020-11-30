@@ -71,9 +71,9 @@ public class camera : MonoBehaviour
 ```  
 * mathf.clamp를 사용하여 코드를 짜주자.  
 ---------------------------------------------------------
-![lecture3-2-5](https://github.com/isp829/HU/blob/master/images/lecture3/3-2/3-2-5.jpg)      
-* 그럼 어떻게 해야 카메라가 캐릭터를 계속 비추게 할 수 있을까?  
+![lecture3-2-11](https://github.com/isp829/HU/blob/master/images/lecture3/3-2/3-2-11.PNG)      
+* 카메라가 비추는 x,y좌표의 최소, 최대값을 정해준다.  
 -------------------------------  
-![lecture3-2-5](https://github.com/isp829/HU/blob/master/images/lecture3/3-2/3-2-5.jpg)      
-* 그럼 어떻게 해야 카메라가 캐릭터를 계속 비추게 할 수 있을까?  
--------------------------------  
+![lecture3-2-12](https://github.com/isp829/HU/blob/master/images/lecture3/3-2/3-2-12.PNG)      
+* 실행해보면 아까와는 다르게 위치감이 느껴진다.  
+-------------------------------    
