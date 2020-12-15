@@ -19,7 +19,7 @@
 ![exit](https://github.com/isp829/HU/blob/master/images/lecture3/3-3/3-3-5.PNG) 
 * 그림과 같이 stay는 접촉하고있을때, enter는 처음 접촉할때. exit는 접촉이 떨어질때 호출된다.  
 -------------------------------------------------------------    
-![최적화짤](https://github.com/isp829/HU/blob/master/images/lectureA/A-3.png) 
+![최적화짤](https://github.com/isp829/HU/blob/master/images/lecture3/3-3/3-3-6.png) 
 * OnCollison이 물체마다 rigidbody를 사용하므로 게임내 object들이 많아질수록 OnTrigger에 비해 최적화가 안좋다.   
 -------------------------------------------------------------    
 ![A-4](https://github.com/isp829/HU/blob/master/images/lectureA/A-4.png)   
