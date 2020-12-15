@@ -1,6 +1,6 @@
 다른 물체들과 상호작용 만들기
 =======================
-![collision](https://github.com/isp829/HU/blob/master/images/lecture3/3-3/3-3-1.PNG)  
+![collision](https://github.com/isp829/HU/blob/master/images/lecture3/3-3/3-3-1.PNG)
 ![trigger](https://github.com/isp829/HU/blob/master/images/lecture3/3-3/3-3-2.PNG)  
 * unity에서 물체끼리 상호작용할때 제일 많이 쓰이는 OnCollision과 OnTrigger에 대해서 알아보자.  
 ---------------------------------------------------  
