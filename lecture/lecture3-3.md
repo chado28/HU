@@ -9,7 +9,7 @@
 * 물체의 면끼리 접촉하는걸로 작동한다.  
 * 상태에 따라 명령어를 Enter, Stay, Exit으로 표현할 수 있다.  
 --------------------------------------------------------------------------------------    
-![trigger]https://github.com/isp829/HU/blob/master/images/lecture3/3-3/3-3-2.PNG)   
+![trigger](https://github.com/isp829/HU/blob/master/images/lecture3/3-3/3-3-2.PNG)   
 * OnTrigger는 상호작용한 두물체에 collider가 필요하지만, rigidbody는 하나만 있어도 된다.  
 * 면끼리 접촉뿐만 아니라 서로 겹치는것도 된다.  
 * 상태에 따라 명령어를 Enter, Stay, Exit으로 표현할 수 있다.  
