@@ -15,3 +15,56 @@
 ![5-1-3](https://github.com/isp829/HU/blob/master/images/lecture5/5-1/5-1-3.png)  
 * player가 근처에 오면 player를 추격하는 적을 만들어보자.  
 -----------------------  
+![5-1-4](https://github.com/isp829/HU/blob/master/images/lecture5/5-1/5-1-4.PNG)  
+* 두 지점을 순찰하는 코드를 짜보자.  
+* 두개의 gameObject를 만들고 collider2D에 트리거를 넣어 OnTriggerEnter함수를 써서 지점에 도착하면 반대지점으로 가는 코드를 만들어보자.  
+-------------------------------------------------  
+![5-1-5](https://github.com/isp829/HU/blob/master/images/lecture5/5-1/5-1-2.png)
+![5-1-6](https://github.com/isp829/HU/blob/master/images/lecture5/5-1/5-1-2.png)
+![5-1-7](https://github.com/isp829/HU/blob/master/images/lecture5/5-1/5-1-2.png)
+* Vector2.MoveTowards를 사용하면 물체를 특정 지점으로 특정속도로 향하게 만들 수 있다.   
+--------------------------------
+```
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class enemy : MonoBehaviour
+{
+    public float enemySpeed;//걸어가는 속도     
+    public Transform target;//현재 타겟 
+    public Transform[] waypoint;// 순찰지점들  
+    public int wayNumber;//현재 순찰 지점  
+   
+    void Update()
+    {
+        Vector2 targetV = new Vector2(target.position.x, target.position.y);
+        transform.position = Vector2.MoveTowards(transform.position, targetV, enemySpeed * Time.deltaTime);
+        if (target.position.x <= transform.position.x)//얼굴뒤집기
+        {
+            this.transform.eulerAngles = new Vector3(0, 180, 0);//향하는 방향따라 뒤집어 주기  
+        }
+        else
+        {
+            this.transform.eulerAngles = new Vector3(0, 0, 0); 
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D col) 
+    {
+        if (col.gameObject.tag == "turnpoint") 
+        {
+            if (target = waypoint[wayNumber])//turnpoint도착하면 다음 위치로.
+            {
+                wayNumber++;
+                wayNumber = wayNumber % 2;//1 2 1 2 반복
+                target = waypoint[wayNumber];
+            }
+        }
+       
+    }
+}
+
+```
+* 코드 전문이다. 그냥 빼기지 말고 이걸 왜쓰는지 생각해보자.  
+-------------------  
