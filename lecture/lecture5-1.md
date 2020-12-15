@@ -1,4 +1,4 @@
-적 기본행동 만들어주기  
+적 기본행동 만들어주기1 
 =======================
 ![5-1-1](https://github.com/isp829/HU/blob/master/images/lecture5/5-1/5-1-1.PNG)  
 * [enemy다운](https://drive.google.com/file/d/1oo1JdJfdgBsulcYFz6lERQLvpYDyjJ0V/view?usp=sharing)
