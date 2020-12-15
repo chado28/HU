@@ -22,14 +22,14 @@
 ![최적화짤](https://github.com/isp829/HU/blob/master/images/lecture3/3-3/3-3-6.png) 
 * OnCollison이 물체마다 rigidbody를 사용하므로 게임내 object들이 많아질수록 OnTrigger에 비해 최적화가 안좋다.   
 -------------------------------------------------------------    
-![3-3-7](https://github.com/isp829/HU/blob/master/images/lectureA/A-4.png)   
+![3-3-7](https://github.com/isp829/HU/blob/master/images/lecture3/3-3/3-3-7.png)   
 * 게임에 쓸 object들을 가져와준다.  
 * 밟으면 죽는 장애물과 스테이지 클리어용 포탈을 가져왔다.  
 ------------------  
-![3-3-8](https://github.com/isp829/HU/blob/master/images/lectureA/A-5.png)   
+![3-3-8](https://github.com/isp829/HU/blob/master/images/lecture3/3-3/3-3-8.png)   
 * 각각 object에 polygon collider 2D를 넣어준다.  
 -------------------------------------------------------------   
-![3-3-9](https://github.com/isp829/HU/blob/master/images/lectureA/A-5.png)   
+![3-3-9](https://github.com/isp829/HU/blob/master/images/lecture3/3-3/3-3-9.png)   
 * 장애물에는 spike tag를, 포탈에는 goal tag를 해준다.  
 * 계속 쓸 object들이므로 prefab해주는게 좋다.  
 -------------------------------------------------------------   
