@@ -127,3 +127,5 @@ public class enemy : MonoBehaviour
 }
 
 ```
+* 코드 전문이다. 
+-----------------------  
