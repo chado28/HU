@@ -19,9 +19,9 @@
 * 두 지점을 순찰하는 코드를 짜보자.  
 * 두개의 gameObject를 만들고 collider2D에 트리거를 넣어 OnTriggerEnter함수를 써서 지점에 도착하면 반대지점으로 가는 코드를 만들어보자.  
 -------------------------------------------------  
-![5-1-5](https://github.com/isp829/HU/blob/master/images/lecture5/5-1/5-1-2.png)
-![5-1-6](https://github.com/isp829/HU/blob/master/images/lecture5/5-1/5-1-2.png)
-![5-1-7](https://github.com/isp829/HU/blob/master/images/lecture5/5-1/5-1-2.png)
+![5-1-5](https://github.com/isp829/HU/blob/master/images/lecture5/5-1/5-1-5.PNG)
+![5-1-6](https://github.com/isp829/HU/blob/master/images/lecture5/5-1/5-1-6.PNG)
+![5-1-7](https://github.com/isp829/HU/blob/master/images/lecture5/5-1/5-1-7.PNG)
 * Vector2.MoveTowards를 사용하면 물체를 특정 지점으로 특정속도로 향하게 만들 수 있다.   
 --------------------------------
 ```
