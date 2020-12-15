@@ -113,9 +113,9 @@ public class test : MonoBehaviour
     }
 }
 ```
-코드 전문이다. 추가된 코드들이 무엇을 뜻하는지 생각하면서 써보자.  
+* 코드 전문이다. 추가된 코드들이 무엇을 뜻하는지 생각하면서 써보자.  
 -------------------------------------------------------------   
-![3-3-12](https://github.com/isp829/HU/blob/master/images/lecture3/3-3/3-3-9.png)   
+![3-3-12](https://github.com/isp829/HU/blob/master/images/lecture3/3-3/3-3-12.PNG)   
 * 실행해보면 잘된다.  
 -------------------------------------------------------------   
 [목차로](https://github.com/isp829/HU/blob/master/README.md)  
