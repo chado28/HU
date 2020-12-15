@@ -9,9 +9,9 @@
 * 점프&런 게임에서 적은 어떤 행동을 해야될까?
 지금까지 해왔던 점프&런 게임들을 떠올려보면서 생각해보자.  
 ---------------------------  
-![5-1-2](https://github.com/isp829/HU/blob/master/images/lecture5/5-1/5-1-1.PNG)  
+![5-1-2](https://github.com/isp829/HU/blob/master/images/lecture5/5-1/5-1-2.png)  
 * 제일 간단하게 특정 지점들을 순찰하면서  
 ---------------------------  
-![5-1-3](https://github.com/isp829/HU/blob/master/images/lecture5/5-1/5-1-1.PNG)  
+![5-1-3](https://github.com/isp829/HU/blob/master/images/lecture5/5-1/5-1-3.png)  
 * player가 근처에 오면 player를 추격하는 적을 만들어보자.  
 -----------------------  
