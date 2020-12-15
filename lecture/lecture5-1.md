@@ -68,3 +68,62 @@ public class enemy : MonoBehaviour
 ```
 * 코드 전문이다. 그냥 지 말고 이걸 왜쓰는지 생각해보자.  
 -------------------  
+![5-1-8](https://github.com/isp829/HU/blob/master/images/lecture5/5-1/5-1-8.PNG)
+![5-1-9](https://github.com/isp829/HU/blob/master/images/lecture5/5-1/5-1-9.PNG)
+* 이제 player가 일정 수준 가까워지면 target을 player로 정하는 코드를 짜보자.  
+* Vector2.Distance를 쓰면 두 지점 사이의 거리를 계산할 수 있다.  
+--------------------------------
+```
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class enemy : MonoBehaviour
+{
+    public float enemySpeed;
+    public Transform target;
+    public Transform[] waypoint;
+    public int wayNumber;
+    public Transform player;
+    public float dist;
+    public float checkDist;
+    
+    void Update()
+    {
+        dist = Vector2.Distance(transform.position, player.position);
+        if (dist > checkDist)
+        {
+            target = waypoint[wayNumber]; 
+        }
+        else 
+        {
+            target = player;
+        }
+        Vector2 targetV = new Vector2(target.position.x, target.position.y);
+        transform.position = Vector2.MoveTowards(transform.position, targetV, enemySpeed * Time.deltaTime);
+        if (target.position.x <= transform.position.x)//얼굴뒤집기
+        {
+            this.transform.eulerAngles = new Vector3(0, 180, 0);
+        }
+        else
+        {
+            this.transform.eulerAngles = new Vector3(0, 0, 0); 
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D col) 
+    {
+        if (col.gameObject.tag == "turnpoint") 
+        {
+            Debug.Log("!!");
+            if (target = waypoint[wayNumber])
+            {
+                wayNumber++;
+                wayNumber = wayNumber % 2;
+                target = waypoint[wayNumber];
+            }
+        }
+    }
+}
+
+```
