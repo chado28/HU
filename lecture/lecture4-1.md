@@ -14,14 +14,18 @@
 * 이런 종류의 게임에서 항상 나오는 한번 밟으면 사라지는 바닥도  
 Destroy(Object,time)을 사용하여 몇초후에 사라지게 만들어보자.  
 -----------------------  
-![4-1-5](https://github.com/isp829/HU/blob/master/images/lecture5/5-1/5-1-4.PNG)  
-* 두 지점을 순찰하는 코드를 짜보자.  
-* 두개의 gameObject를 만들고 collider2D에 트리거를 넣어 OnTriggerEnter함수를 써서 지점에 도착하면 반대지점으로 가는 코드를 만들어보자.  
+![4-1-5](https://github.com/isp829/HU/blob/master/images/lecture5/4-1/4-1-5.PNG)  
+* 적당히 애니메이션도 적용하여 사라지는게 눈에 보이게 하자.  
 -------------------------------------------------  
-![5-1-5](https://github.com/isp829/HU/blob/master/images/lecture5/5-1/5-1-5.PNG)
-![5-1-6](https://github.com/isp829/HU/blob/master/images/lecture5/5-1/5-1-6.PNG)
-![5-1-7](https://github.com/isp829/HU/blob/master/images/lecture5/5-1/5-1-7.PNG)
-* Vector2.MoveTowards를 사용하면 물체를 특정 지점으로 특정속도로 향하게 만들 수 있다.   
+```
+```
+------------------------------------------
+```
+```
+* 각각 player에 들어가는 코드 수정본과 새로만든 부서지는 발판의 코드들이다.
+--------------------------------
+![4-1-6](https://github.com/isp829/HU/blob/master/images/lecture4/4-1/4-1-6.PNG)   
+* 이 외에도 다양하게 만들어보자.  
 --------------------------------
 ```
 using System.Collections;
