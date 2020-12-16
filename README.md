@@ -26,7 +26,6 @@
 3. 적 만들기
    1. [적 기본행동 만들어주기1](lecture/lecture5-1.md)
    2. [적 기본행동 만들어주기2](lecture/lecture5-1-1.md)
-   2. [플레이어, 바닥과의 상호작용](lecture/lecture5-2.md)
    
   
 2. 발판 만들기
