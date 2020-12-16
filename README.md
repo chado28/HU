@@ -29,7 +29,7 @@
    
   
 2. 발판 만들기   
-   2. [특수 발판 만들기](lecture/lecture4-1.md)  
+   1. [특수 발판 만들기](lecture/lecture4-1.md)  
    
 4. 더 재밌게 만들 수 없을까?
    1. [스프라이트&애니메이션 적용](lecture/lecture6-1.md)
