@@ -26,4 +26,22 @@ player개선하기
 ![6-1-8](https://github.com/isp829/HU/blob/master/images/lecutre6/6-1/6-1-8.PNG)
 * 실행해 보면 바닥에서 떨어지고 나서 빠르게 점프하면 점프가 먹힌다.  
 -----------------------   
+![6-1-9](https://github.com/isp829/HU/blob/master/images/lecutre6/6-1/6-1-9.PNG)
+* 점프를 늦게 눌러도 작동하게 만들었으니까 점프를 좀 일찍 눌러놔서 선입력을 받게 해주자.  
+* 선입력이란 게임에서 내가 스킬을 시전하고 있는 와중에 다른기술 키를 누르면  
+지금 쓰고 있는 기술이 끝나자마자 다른기술이 나가는 시스템이다.
+* 롤에서도 스턴맞기 전에 타겟팅 스킬을 미리 선입력 해놓으면 내 캐릭터는 스턴에 맞은 상태지만 스킬이 나간다.  
+-----------------------   
+![6-1-10](https://github.com/isp829/HU/blob/master/images/lecutre6/6-1/6-1-10.PNG)
+* 실행해 보면 바닥에서 떨어지고 나서 빠르게 점프하면 점프가 먹힌다.  
+-----------------------   
+![6-1-11](https://github.com/isp829/HU/blob/master/images/lecutre6/6-1/6-1-11.PNG)
+* 실행해 보면 바닥에서 떨어지고 나서 빠르게 점프하면 점프가 먹힌다.  
+-----------------------   
+<iframe width="560" height="315" src="https://www.youtube.com/embed/" frameborder="0" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/" frameborder="0" allowfullscreen></iframe>
+
+ {% include 파일명.html id="유튜브동영상url" %}  
+
 
