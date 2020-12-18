@@ -20,6 +20,13 @@ enemy는 우리가 보고 조작하는게 아니므로 eye도 넣어주자.
 ![6-2-5](https://github.com/isp829/HU/blob/master/images/lecutre6/6-2/6-2-5.PNG)  
 * 실행해보면 눈앞에 벽이 있으면 바로 점프해서 뛰어넘고 진행한다.  
 ---------------------------------------------------    
+![6-2-6](https://github.com/isp829/HU/blob/master/images/lecutre6/6-2/6-2-6.PNG)  
+* 지금 enemy의 target이 player랑 waypoint일때의 차이점이 없어서 enemy가 그냥 걸어가는건지 아니면 날 잡으러 오는지 알 방법이 없다.  
+* target이 player일때 바로 알 수 있는 방법을 생각해보자.  
+---------------------------------------------------    
+![6-2-7](https://github.com/isp829/HU/blob/master/images/lecutre6/6-2/6-2-7.PNG)  
+* enemy의 target이 player이면 머리위에 느낌표가 뜨도록 만들어보자.  
+---------------------------------------------------    
 
     
 
