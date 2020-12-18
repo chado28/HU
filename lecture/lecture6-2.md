@@ -27,6 +27,24 @@ enemy는 우리가 보고 조작하는게 아니므로 eye도 넣어주자.
 ![6-2-7](https://github.com/isp829/HU/blob/master/images/lecutre6/6-2/6-2-7.PNG)  
 * enemy의 target이 player이면 머리위에 느낌표가 뜨도록 만들어보자.  
 ---------------------------------------------------    
+![6-2-8](https://github.com/isp829/HU/blob/master/images/lecutre6/6-2/6-2-8.PNG)  
+* 3D object에서 textMeshPro를 만들어주자.  
+* 원래는 유료 에셋이었는데 무료로 바뀌었다.  
+---------------------------------------------------    
+![6-2-9](https://github.com/isp829/HU/blob/master/images/lecutre6/6-2/6-2-9.PNG)  
+* 유니티에서 사용하기 위해서는 TMPro헤더파일을 쓴다고 적어주어야 한다.  
+---------------------------------------------------    
+![6-2-10](https://github.com/isp829/HU/blob/master/images/lecutre6/6-2/6-2-10.PNG)  
+![6-2-11](https://github.com/isp829/HU/blob/master/images/lecutre6/6-2/6-2-11.PNG)  
+![6-2-12](https://github.com/isp829/HU/blob/master/images/lecutre6/6-2/6-2-12.PNG)   
+* string을 받아 글자를 띄우는 함수를 만들고 enemy와 player의 상태에 따라 다른 글자들을 출력하게 하자.  
+---------------------------------------------------    
+
+![6-2-7](https://github.com/isp829/HU/blob/master/images/lecutre6/6-2/6-2-7.PNG)  
+* enemy의 target이 player이면 머리위에 느낌표가 뜨도록 만들어보자.  
+---------------------------------------------------    
+
+
 
     
 
