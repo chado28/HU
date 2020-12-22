@@ -146,7 +146,7 @@ public class enemy : MonoBehaviour
     
 
 ```
-* 오늘 수정한 enemy코드 전문이다.
+* 수정한 enemy코드 전문이다.
 ----------------------------
 [목차로](https://github.com/isp829/HU/blob/master/README.md)  
 [다음](https://github.com/isp829/HU/blob/master/lecture/lecture6-3.md)  
