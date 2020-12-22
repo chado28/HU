@@ -40,7 +40,7 @@ player개선하기
 ![6-1-13](https://github.com/isp829/HU/blob/master/images/lecutre6/6-1/6-1-13.PNG)
 * 실행해 보면 바닥에 닿기전에 점프키를 누르면 바닥에 닿자마자 점프한다.  
 -----------------------   
-![6-1-14](https://github.com/isp829/HU/blob/master/images/lecutre6/6-1/6-1-14.PNG)
+![6-1-14](https://github.com/isp829/HU/blob/master/images/lecutre6/6-1/6-1-14.png)
 * 보통 게임에서는 피격시 캐릭터가 불투명하게 변하면서 그동안은 무적 판정이 있다.
 -----------------------   
 ![6-1-15](https://github.com/isp829/HU/blob/master/images/lecutre6/6-1/6-1-15.PNG)  
