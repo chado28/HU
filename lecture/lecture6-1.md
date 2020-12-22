@@ -37,7 +37,7 @@ player개선하기
 * jumpBufferLentght의 시간만큼 선입력이 가능하다.  
 * 이제 버튼 누른다고 점프 조건이 아니므로 코드들을 수정해주자.  
 -----------------------   
-![6-1-11](https://github.com/isp829/HU/blob/master/images/lecutre6/6-1/6-1-11.PNG)
+![6-1-13](https://github.com/isp829/HU/blob/master/images/lecutre6/6-1/6-1-13.PNG)
 * 실행해 보면 바닥에 닿기전에 점프키를 누르면 바닥에 닿자마자 점프한다.  
 -----------------------   
 ```
