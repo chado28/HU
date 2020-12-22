@@ -51,9 +51,167 @@ player개선하기
 * Physics2D.IgnoreLayerCollision기능을 사용하면 두 레이어 사이의 상호작용을 없앨 수 있다.  
 * player를 layer9번에, enemy를 layer10번에 넣어주자.  
 -----------------------   
+![6-1-18](https://github.com/isp829/HU/blob/master/images/lecutre6/6-1/6-1-18.PNG)  
+![6-1-19](https://github.com/isp829/HU/blob/master/images/lecutre6/6-1/6-1-19.PNG)  
+![6-1-20](https://github.com/isp829/HU/blob/master/images/lecutre6/6-1/6-1-20.PNG)  
+![6-1-21](https://github.com/isp829/HU/blob/master/images/lecutre6/6-1/6-1-21.PNG)  
+* 코드들을 사용해 구현해주자.  
+----------------------- 
+![6-1-22](https://github.com/isp829/HU/blob/master/images/lecutre6/6-1/6-1-22.PNG)  
+* 실행해보면 enemy와 접촉시 반투명이 되고 3초동안 상호작용이 안일어난다.    
+--------------  
 ```
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using Unity.Mathematics;
+using UnityEngine.SceneManagement;
+public class test : MonoBehaviour
+{
+    public float moveSpeed = 5.0f; //플레이어 이동 속도
+    private float realMoveSpeed = 5.0f;//실제 이동 속도
+    public float jumpPower = 5.0f; //플레이어 점프 힘
+    private float realJumpPower = 5.0f;//실제 점프 힘
+    public Rigidbody2D rigid;
+    float horizontal; //왼쪽, 오른쪽 방향값을 받는 변수
+    public bool isground;//값을 받을 bool값
+    public Transform groundCheck;//player발위치
+    public float groundRadius = 0.2f;//측정할 범위
+    public LayerMask whatIsGround;//어떤 layer를 측정할지
+    public Animator animator;//애니메이터 추가
+    public float jumpTime = 0.2f;//점프 후입력
+    public float jumpCounter;
+    public float jumpBufferLength=0.2f;//점프 선입력
+    public float jumpBufferCount;
+    Renderer rend;
+    Color c;
+    private void Start()
+    {
+        rigid = GetComponent<Rigidbody2D>();
+        rend = GetComponent<Renderer>();
+        c = rend.material.color;
+    }
+    private void Update()
+    {
+        isground = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsGround);
+        if (isground == true)
+        {
+            animator.SetBool("jump", false);
+        }
+        Move(); //플레이어 이동
+        Jump(); //점프   
+    }
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.gameObject.tag == "spike")
+        {
+            SceneManager.LoadScene("test");
+           
+        }
+        if (col.gameObject.tag == "goal")
+        {
+            SceneManager.LoadScene("test");
+        }
+    }
+    IEnumerator GetInvulnerable() 
+    {
+        Debug.Log("!!!");
+        Physics2D.IgnoreLayerCollision(9, 10,true);
+        c.a = 0.5f;
+        rend.material.color = c;
+        yield return new WaitForSeconds(3f);
+        Physics2D.IgnoreLayerCollision(9, 10, false);
+        c.a = 1f;
+        rend.material.color = c;
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("enemy"))
+        {
+            StartCoroutine("GetInvulnerable");
+        }
+    }
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("jumpGround"))
+        {
+            realJumpPower = 2 * jumpPower;
+        }
+        else if(collision.gameObject.CompareTag("stickGround"))
+        {
+            realJumpPower = jumpPower/2;
+        }
+        else
+        {
+            realJumpPower = jumpPower;
+        }
+        if (collision.gameObject.CompareTag("fastGround"))
+        {
+            realMoveSpeed = 2 * moveSpeed;
+        }
+        else if (collision.gameObject.CompareTag("slowGround"))
+        {
+            realMoveSpeed = moveSpeed / 2;
+        }
+        else
+        {
+            realMoveSpeed = moveSpeed;
+        }
 
-
+    }
+    void Jump()
+    {
+        if (isground)
+        {
+            jumpCounter = jumpTime;
+        }
+        else
+        {
+            jumpCounter -= Time.deltaTime;
+        }
+        if (Input.GetButtonDown("Jump")) //점프 키가 눌렸을 때//ground이면서 스페이스바 누르면 
+        {
+            jumpBufferCount = jumpBufferLength; 
+            //else return; //점프 중일 때는 실행하지 않고 바로 return.
+        }
+        else
+        {
+            jumpBufferCount -= Time.deltaTime;
+        }
+        if (Input.GetButtonUp("Jump")) 
+        {
+           rigid.velocity = new Vector2(rigid.velocity.x, rigid.velocity.y * 0.5f);//살짝 점프
+           
+        }
+        if (Input.GetButton("Jump"))
+        {
+           animator.SetBool("jump", true);
+        }
+        if (jumpBufferCount>=0&&jumpCounter > 0) //점프 중이지 않을 때
+        {
+            //rigid.AddForce(Vector2.up * realJumpPower, ForceMode2D.Impulse); //위쪽으로 힘을 준다.//반점프 사용하기위해서 이거말고 velocity사용
+            rigid.velocity = new Vector2(rigid.velocity.x, realJumpPower);
+            jumpBufferCount = 0;//점프 바로 못하게
+            isground = false;
+        }
+    }
+    void Move()
+    {
+        horizontal = Input.GetAxis("Horizontal");
+        if (horizontal != 0)
+        {
+            animator.SetBool("walk", true);//애니메이터 설정 walk를 true.
+            if (horizontal >= 0) this.transform.eulerAngles = new Vector3(0, 0, 0);
+            else this.transform.eulerAngles = new Vector3(0, 180, 0);
+        }
+        else 
+        {
+            animator.SetBool("walk", false);//좌우로 안움직이면 애니메이터 설정 walk false.
+        }
+        Vector3 dir = math.abs(horizontal) * Vector3.right; //변수의 자료형을 맞추기 위해 생성한 새로운 Vector3 변수
+        this.transform.Translate(dir * realMoveSpeed * Time.deltaTime); //오브젝트 이동 함수
+    }
+}
 ```
 * 개선한 코드 전문이다.
 ----------------------------
