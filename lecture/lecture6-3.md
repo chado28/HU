@@ -197,6 +197,6 @@ public class test : MonoBehaviour
 * 수정한 코드들 전문이다.  
 -------------
 [목차로](https://github.com/isp829/HU/blob/master/README.md)  
-[다음](https://github.com/isp829/HU/blob/master/lecture/lecture3-3.md)   
+[다음](https://github.com/isp829/HU/blob/master/lecture/lecture6-4.md)   
 -----------------------------  
 
