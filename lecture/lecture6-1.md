@@ -49,6 +49,7 @@ player개선하기
 * Color기능과 Physics2D.IgnoreLayerCollision기능을 사용하여 구현해보자.
 * Color의 a값을 조절하면 푸명토를 조절할 수 있다.  
 * Physics2D.IgnoreLayerCollision기능을 사용하면 두 레이어 사이의 상호작용을 없앨 수 있다.  
+* player를 layer9번에, enemy를 layer10번에 넣어주자.  
 -----------------------   
 ```
 
