@@ -44,8 +44,8 @@ player개선하기
 * 보통 게임에서는 피격시 캐릭터가 불투명하게 변하면서 그동안은 무적 판정이 있다.
 -----------------------   
 ![6-1-15](https://github.com/isp829/HU/blob/master/images/lecutre6/6-1/6-1-15.PNG)  
-![6-1-16(https://github.com/isp829/HU/blob/master/images/lecutre6/6-1/6-1-16.PNG)  
-![6-1-17(https://github.com/isp829/HU/blob/master/images/lecutre6/6-1/6-1-17.PNG)  
+![6-1-16](https://github.com/isp829/HU/blob/master/images/lecutre6/6-1/6-1-16.PNG)  
+![6-1-17](https://github.com/isp829/HU/blob/master/images/lecutre6/6-1/6-1-17.PNG)  
 * Color기능과 Physics2D.IgnoreLayerCollision기능을 사용하여 구현해보자.
 * Color의 a값을 조절하면 푸명토를 조절할 수 있다.  
 * Physics2D.IgnoreLayerCollision기능을 사용하면 두 레이어 사이의 상호작용을 없앨 수 있다.  
