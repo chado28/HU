@@ -25,7 +25,7 @@
 * 팔레트에서 그릴 타일을 선택하고 붓모양을 클릭해서 맵을 그려보자.  
 -------------------------------------------------------------    
 [목차로](https://github.com/isp829/HU/blob/master/README.md)  
-[다음](https://github.com/isp829/HU/blob/master/lecture/lectureA.md)  
+[다음](https://github.com/isp829/HU/blob/master/lecture/lecture3-1.md)  
 -----------------------------
     
 
