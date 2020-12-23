@@ -10,23 +10,23 @@
 * 무적 아이템을 먹으면 무적인걸 알기쉽게 색깔이 바뀌고 이동속도가 증가하고 적과 상호작용이 안일어나게 하자.  
 먹은 아이템은 사라지게 하자.   
 ------------------------------------    
-![6-4-4](https://github.com/isp829/HU/blob/master/images/lecture6/6-4/6-4-3.jpg)
-![6-4-5](https://github.com/isp829/HU/blob/master/images/lecture6/6-4/6-4-3.jpg)
-![6-4-6](https://github.com/isp829/HU/blob/master/images/lecture6/6-4/6-4-3.jpg)  
+![6-4-4](https://github.com/isp829/HU/blob/master/images/lecture6/6-4/6-4-4.PNG)
+![6-4-5](https://github.com/isp829/HU/blob/master/images/lecture6/6-4/6-4-5.PNG)
+![6-4-6](https://github.com/isp829/HU/blob/master/images/lecture6/6-4/6-4-6.PNG)  
 * 체력증가 아이템을 위한 코드들이다 잘 재활용해서 만들어보자.  
 ------------------------------------    
-![6-4-7](https://github.com/isp829/HU/blob/master/images/lecture6/6-4/6-4-4.jpg)
-![6-4-8](https://github.com/isp829/HU/blob/master/images/lecture6/6-4/6-4-4.jpg)      
+![6-4-7](https://github.com/isp829/HU/blob/master/images/lecture6/6-4/6-4-7.PNG)
+![6-4-8](https://github.com/isp829/HU/blob/master/images/lecture6/6-4/6-4-8.PNG)      
 * 사용해 보니 아이템 먹을때마다 체력 회복 되고 아이템은 사라지는걸 알 수 있다. 
 * 만약 아이템을 먹었는데도 아이템들이 삭제가 안된다면, OnCollision을 쓴게 아닐까 확인해보자. 
 이경우에는 아이템에는 rigidbody가 없으므로 OnTrigger를 써야한다.     
 ------------------------------------    
-![6-4-9](https://github.com/isp829/HU/blob/master/images/lecture6/6-4/6-4-5.jpg) 
-![6-4-6](https://github.com/isp829/HU/blob/master/images/lecture6/6-4/6-4-5.jpg)  
+![6-4-9](https://github.com/isp829/HU/blob/master/images/lecture6/6-4/6-4-9.PNG) 
+![6-4-6](https://github.com/isp829/HU/blob/master/images/lecture6/6-4/6-4-6.PNG)  
 * 무적 아이템을 위한 코드들이다 잘 재활용해서 만들어보자.   
 ------------------------------------    
-![6-4-10](https://github.com/isp829/HU/blob/master/images/lecture6/6-4/6-4-6.jpg)
-![6-4-11](https://github.com/isp829/HU/blob/master/images/lecture6/6-4/6-4-6.jpg)  
+![6-4-10](https://github.com/isp829/HU/blob/master/images/lecture6/6-4/6-4-10.PNG)
+![6-4-11](https://github.com/isp829/HU/blob/master/images/lecture6/6-4/6-4-11.PNG)  
 * 사용해 보니 잘 작동한다.     
 ------------------------------------ 
 ```
