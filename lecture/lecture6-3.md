@@ -18,6 +18,7 @@ UI만들기
 --------------------------------------  
 ![6-3-8](https://github.com/isp829/HU/blob/master/images/lecutre6/6-3/6-3-8.PNG)  
 * 실행해보면 enemy나 spike에 닿으면 체력이 줄어들고 무적상태가 된다.   
+* 시작 체력을 3으로 하고 체력이 0이면 scene을 다시불러오도록 코드를 수정하자.  
 --------------------------------------     
 ```
 using System.Collections;
@@ -188,6 +189,10 @@ public class test : MonoBehaviour
             else 
             {
                 hearts[i].enabled = false;
+            }
+            if (health <= 0)
+            {
+                SceneManager.LoadScene("test");//체력 0이면 scene다시불러오기 
             }
         }
     }
