@@ -37,15 +37,15 @@ enemy는 우리가 보고 조작하는게 아니므로 eye도 넣어주자.
 ![6-2-12](https://github.com/isp829/HU/blob/master/images/lecture6/6-2/6-2-12.PNG)   
 * string을 받아 글자를 띄우는 함수를 만들고 enemy와 player의 상태에 따라 다른 글자들을 출력하게 하자.  
 ---------------------------------------------------    
-![6-2-13](https://github.com/isp829/HU/blob/master/images/lecutre6/6-2/6-2-13.PNG)  
+![6-2-13](https://github.com/isp829/HU/blob/master/images/lecture6/6-2/6-2-13.PNG)  
 * 실행해 보니까 캐릭터가 뒤집힐때 글자도 같이 좌우 반전되서 보기 흉하다. 어떻게 해결 할 수 있을까?  
 ---------------------------------------------------    
-![6-2-14](https://github.com/isp829/HU/blob/master/images/lecutre6/6-2/6-2-14.PNG)  
-![6-2-15](https://github.com/isp829/HU/blob/master/images/lecutre6/6-2/6-2-15.PNG)  
+![6-2-14](https://github.com/isp829/HU/blob/master/images/lecture6/6-2/6-2-14.PNG)  
+![6-2-15](https://github.com/isp829/HU/blob/master/images/lecture6/6-2/6-2-15.PNG)  
 * 빈gameObject를 하나 만들어주고 그안에 둘다 넣어주면 textMeshPro는 안뒤집힌다.  
 * 추가로 코드를 넣어주어 textMeshPro의 위치가 enemy머리위에 오도록 해주자.  
 ---------------------------------------------------    
-![6-2-16](https://github.com/isp829/HU/blob/master/images/lecutre6/6-2/6-2-16.PNG)  
+![6-2-16](https://github.com/isp829/HU/blob/master/images/lecture6/6-2/6-2-16.PNG)  
 * 실행해 보면 아주 잘 작동한다.
 ---------------------------------------------------  
 ```
