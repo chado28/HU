@@ -4,7 +4,7 @@
 * 지금까지 만들어왔던 코드들을 살짝씩 수정하여 아이템들을 만들어보자.  
 * 체력 증가 아이템과 무적 아이템을 만들어보자.  
 ------------------------------------    
-![6-4-2](https://github.com/isp829/HU/blob/master/images/lecutre6/6-4/6-4-2.jpg) 
+![6-4-2](https://github.com/isp829/HU/blob/master/images/lecture6/6-4/6-4-2.jpg) 
 ![6-4-3](https://github.com/isp829/HU/blob/master/images/lecture6/6-4/6-4-3.jpg)  
 * 체력 증가 아이템을 먹으면 그냥 단순히 최대체력이 늘어나고 아이템은 사라지게 만들자.  
 * 무적 아이템을 먹으면 무적인걸 알기쉽게 색깔이 바뀌고 이동속도가 증가하고 적과 상호작용이 안일어나게 하자.  
